@@ -42,7 +42,7 @@ body {
   font-weight: bold;
   font-size: 1.8em;
   color: #fff;
-  background-color: rgba(56, 66, 56, 0.6); /* Hitam transparan */
+  background-color: rgba(6, 131, 6, 0.6); /* Hitam transparan */
   padding: 8px 16px;
   border-radius: 200px;
   text-shadow: 0 0 5px #c4c3bd;
@@ -56,7 +56,7 @@ body {
   gap: 30px;
 }
 .menu {
-  background-color: rgba(17, 17, 17, 0.85); /* hitam pekat transparan */
+  background-color:  rgba(7, 153, 7, 0.6); /* hitam pekat transparan */
   padding: 14px 30px;
   border-radius: 14px;
   display: flex;
@@ -361,6 +361,18 @@ p {
   color: #444;
   line-height: 1.5;
 }
+.section-title {
+  font-style: normal;
+}
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+
+  margin-bottom: 20px;
+  text-align: center;
+  font-style: normal; /* ini yang penting */
+}
+
 
 /* ========== FOOTER ========== */
 .footer {
@@ -680,5 +692,54 @@ scroll-cards {
     text-align: center;
   }
 }
+h1, h2, h3, h4, h5, h6 {
+  font-style: normal !important;
+}
+/* WhatsApp Floating Button */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.whatsapp-button a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #25d366;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.whatsapp-button a:hover {
+  background-color: #1ebe57;
+}
+
+.whatsapp-button i {
+  font-size: 24px;
+}
+
+.whatsapp-button .chat-text {
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .whatsapp-button .chat-text {
+    display: none; /* Sembunyikan teks di layar kecil */
+  }
+
+  .whatsapp-button a {
+    padding: 12px;
+    border-radius: 50%;
+  }
+}
+
 
 
